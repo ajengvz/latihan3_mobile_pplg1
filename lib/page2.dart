@@ -6,13 +6,37 @@ class Page2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pushNamed(context, '/page2');
-          },
-          child: Text('pindah ke halaman 2'),
-          ),
+      body: Column(
+    children: [
+      Row(
+        children: [Container(
+        height: 100,
+        width: 100,
+        color:Colors.red,
+      ),
+      Container(
+        height: 100,
+        width: 100,
+        color: Colors.green
+      ),
+      ],
+        ),
+      Row(
+        children: [Container(
+        height: 100,
+        width: 100,
+        color: Colors.blue,
+      ),
+      Container(
+        height: 100,
+        width: 100,
+        color: Colors.amber,
+      ),
+      ],
+        ),
+      
+    ],    
+        
       ),
     );
   }
